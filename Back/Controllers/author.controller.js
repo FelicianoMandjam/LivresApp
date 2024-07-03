@@ -11,6 +11,14 @@ export const showAll = async (req, res, next) => {
   }
 };
 export const add = async (req, res, next) => {
+  try {
+    const createdAuthor = await Author.create(req.body);
+    res.status(201).json("A author as been created");
+    console.log(createdAuthor);
+  } catch (error) {
+    console.log(error);
+    res.status(400).json("Add author fail");
+  }
   console.log("Ajout de l'auteur");
 };
 
