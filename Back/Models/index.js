@@ -1,0 +1,27 @@
+import { error } from "console";
+import connection from "../config/db.js";
+import { Sequelize } from "sequelize";
+import authorModel from "./author.model.js";
+import bookModel from "./book.model.js";
+
+try {
+  await connection.authenticate();
+  console.log("The connection to the db is successfully");
+} catch (e) {
+  console.error("Unable to connect to the database:", e);
+}
+
+authorModel(connection, Sequelize);
+bookModel(connection, Sequelize);
+
+const { Author, Book } = connection.models;
+
+// __________________A revoir_____________
+
+// Author.hasOne(Book, {as:"Book_id"})
+// Book.belongsTo(Author)
+
+await connection.sync({ force: false });
+console.log("Syncro ok");
+
+export { Author, Book };
