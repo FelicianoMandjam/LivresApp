@@ -16,12 +16,10 @@ bookModel(connection, Sequelize);
 
 const { Author, Book } = connection.models;
 
-// __________________A revoir_____________
+Author.hasMany(Book, { as: "Book_id" });
+Book.belongsTo(Author);
 
-// Author.hasOne(Book, {as:"Book_id"})
-// Book.belongsTo(Author)
-
-await connection.sync({ force: false });
+await connection.sync({ force: false, alter: false });
 console.log("Syncro ok");
 
 export { Author, Book };
