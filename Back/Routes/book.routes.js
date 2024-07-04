@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.post("/add", bookController.add);
 router.get("/show", bookController.showAll);
-router.put("/update/:id", bookController.modification);
-router.delete("/delete/:id", bookController.suppression);
+// router.put("/update/:id", bookController.modification);
+// router.delete("/delete/:id", bookController.suppression);
 
 export default router;
