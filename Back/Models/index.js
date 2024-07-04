@@ -19,7 +19,7 @@ const { Author, Book } = connection.models;
 Author.hasMany(Book, { as: "Book_id" });
 Book.belongsTo(Author);
 
-await connection.sync({ force: false, alter: false });
+await connection.sync({ force: false, alter: true });
 console.log("Syncro ok");
 
 export { Author, Book };

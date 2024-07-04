@@ -7,7 +7,7 @@ export const showAll = async (req, res, next) => {
     console.log(authors);
   } catch (error) {
     console.log(error);
-    res.status(400).json("Authors not found");
+    res.status(500).json({ message: "Authors not found" });
   }
 };
 export const add = async (req, res, next) => {
@@ -17,15 +17,15 @@ export const add = async (req, res, next) => {
     console.log(createdAuthor);
   } catch (error) {
     console.log(error);
-    res.status(400).json("Add author fail");
+    res.status(500).json("Add author fail");
   }
   console.log("Ajout de l'auteur");
 };
 
-export const suppression = async (req, res, next) => {
-  console.log("Supression de l'auteur");
-};
+// export const suppression = async (req, res, next) => {
+//   console.log("Supression de l'auteur");
+// };
 
-export const modification = async (req, res, next) => {
-  console.log("Modification de l'auteur");
-};
+// export const modification = async (req, res, next) => {
+//   console.log("Modification de l'auteur");
+// };
