@@ -2,14 +2,13 @@ import { Author } from "../Models/index.js";
 
 export const showAll = async (req, res, next) => {
   try {
-    const authors = Author.findAll();
+    const authors = await Author.findAll();
     res.status(200).json(authors);
-    console.log(authors);
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({ message: "Authors not found" });
+  } catch {
+    res.status(500).json( "Authors not found" );
   }
 };
+
 export const add = async (req, res, next) => {
   try {
     const createdAuthor = await Author.create(req.body);

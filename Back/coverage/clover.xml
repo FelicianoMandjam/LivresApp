@@ -1,70 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1720098794208" clover="3.2.0">
-  <project timestamp="1720098794208" name="All files">
-    <metrics statements="32" coveredstatements="30" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5" elements="39" coveredelements="37" complexity="0" loc="32" ncloc="32" packages="4" files="7" classes="7"/>
+<coverage generated="1720533783967" clover="3.2.0">
+  <project timestamp="1720533783967" name="All files">
+    <metrics statements="30" coveredstatements="24" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="5" elements="40" coveredelements="32" complexity="0" loc="30" ncloc="30" packages="3" files="6" classes="6"/>
     <package name="Controllers">
-      <metrics statements="13" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <metrics statements="13" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="2"/>
       <file name="book.controller.js" path="/Users/felicianomandjam/Desktop/Developpement_Web /formationCreteil /DevOps/Test/ApplicationLivres/LivresApp/Back/Controllers/book.controller.js">
-        <metrics statements="13" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="38" count="3" type="cond" truecount="2" falsecount="0"/>
+        <metrics statements="13" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="2"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="38" count="3" type="cond" truecount="1" falsecount="1"/>
       </file>
     </package>
     <package name="Models">
-      <metrics statements="13" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="14" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
       <file name="author.model.js" path="/Users/felicianomandjam/Desktop/Developpement_Web /formationCreteil /DevOps/Test/ApplicationLivres/LivresApp/Back/Models/author.model.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="2" count="1" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
       </file>
       <file name="book.model.js" path="/Users/felicianomandjam/Desktop/Developpement_Web /formationCreteil /DevOps/Test/ApplicationLivres/LivresApp/Back/Models/book.model.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="2" count="1" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
       </file>
       <file name="index.js" path="/Users/felicianomandjam/Desktop/Developpement_Web /formationCreteil /DevOps/Test/ApplicationLivres/LivresApp/Back/Models/index.js">
-        <metrics statements="11" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
+        <metrics statements="12" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="Routes">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="book.routes.js" path="/Users/felicianomandjam/Desktop/Developpement_Web /formationCreteil /DevOps/Test/ApplicationLivres/LivresApp/Back/Routes/book.routes.js">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="32" count="4" type="cond" truecount="2" falsecount="0"/>
       </file>
     </package>
     <package name="config">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="db.js" path="/Users/felicianomandjam/Desktop/Developpement_Web /formationCreteil /DevOps/Test/ApplicationLivres/LivresApp/Back/config/db.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="4" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
       </file>
       <file name="env.js" path="/Users/felicianomandjam/Desktop/Developpement_Web /formationCreteil /DevOps/Test/ApplicationLivres/LivresApp/Back/config/env.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
       </file>
     </package>
   </project>

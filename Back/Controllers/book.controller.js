@@ -7,7 +7,7 @@ export const showAll = async (req, res) => {
     console.log(books);
   } catch {
     // **********************************************
-    res.status(200).json("Books not found");
+    res.status(500).json("Books not found");
     // **********************************************
   }
 };
@@ -18,7 +18,7 @@ export const add = async (req, res, next) => {
     res.status(201).json("Un nouveau livre a été crée");
   } catch (error) {
     console.log(error);
-    res.status(400).json("Impossible de créer un nouveau livre");
+    res.status(500).json("Impossible de créer un nouveau livre");
   }
 };
 
