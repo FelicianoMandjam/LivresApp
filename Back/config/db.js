@@ -7,11 +7,11 @@ const connection = new Sequelize(
   "root",
   {
     host: ENV.DB_HOST,
-    dialect: ENV.DIALECT,
+    dialect: 'mysql',
 
-    dialectOptions: {
-      socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
-    },
+    // dialectOptions: {
+    //   socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
+    // },
   }
 );
 

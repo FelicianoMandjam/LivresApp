@@ -11,4 +11,4 @@ export const ENV = {
   DIALECT: process.env.DIALECT,
 };
 
-
+console.log(ENV)
