@@ -7,7 +7,7 @@ import bookModel from "./book.model.js";
 try {
   await connection.authenticate();
   console.log("The connection to the db is successfully");
-} catch (e) {
+} catch (error) {
   console.error("Unable to connect to the database:", error);
 }
 
