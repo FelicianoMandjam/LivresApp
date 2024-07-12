@@ -2,7 +2,7 @@ import { Sequelize } from "sequelize";
 import { ENV } from "./env.js";
 
 const connection = new Sequelize(ENV.DB_NAME, "root", "root", {
-  host: ENV.DB_HOST,
+  host: "localhost",
   dialect: "mysql",
   logging: false,
 
