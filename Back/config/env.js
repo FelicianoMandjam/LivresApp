@@ -10,5 +10,3 @@ export const ENV = {
   DB_PASSEWORD: process.env.PASSWORD,
   DIALECT: process.env.DIALECT,
 };
-
-console.log(ENV)

@@ -29,11 +29,13 @@ describe("getAllLivres", () => {
     expect(res.json).toHaveBeenCalledWith(mockLivres);
   });
 
-  it("should return a 500 status code if an error occurs (500)", async () => {
+  it("should return a 500 status code if an error occours (500)", async () => {
+
     jest.spyOn(Book, "findAll").mockRejectedValue(new Error());
     await bookController.showAll(req, res);
     expect(Book.findAll).toHaveBeenCalledTimes(1);
     expect(res.status).toHaveBeenCalledWith(500);
     expect(res.json).toHaveBeenCalledWith("Books not found");
+    
   });
 });

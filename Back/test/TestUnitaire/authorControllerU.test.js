@@ -1,6 +1,6 @@
 import { Author } from "../../Models/index.js";
 import { jest } from "@jest/globals";
-import * as authorController from "../../Controllers/book.controller.js";
+import * as authorController from "../../Controllers/author.controller.js";
 
 jest.mock("../../Models/book.model.js");
 
@@ -38,7 +38,7 @@ describe("getAllAuthors", () => {
     expect(res.json).toHaveBeenCalledWith(mockAuthors);
   });
 
-  it("should return a 500 status code if an error occurs (500)", async () => {
+  it("should return a 500 status code if an error occours (500)", async () => {
     jest.spyOn(Author, "findAll").mockRejectedValue(new Error());
     await authorController.showAll(req, res);
     expect(Author.findAll).toHaveBeenCalledTimes(1);

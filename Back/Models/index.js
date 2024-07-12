@@ -8,7 +8,7 @@ try {
   await connection.authenticate();
   console.log("The connection to the db is successfully");
 } catch (e) {
-  console.error("Unable to connect to the database:", e);
+  console.error("Unable to connect to the database:", error);
 }
 
 authorModel(connection, Sequelize);
