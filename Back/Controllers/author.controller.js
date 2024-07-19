@@ -4,6 +4,7 @@ export const showAll = async (req, res, next) => {
   try {
     const authors = await Author.findAll();
     res.status(200).json(authors);
+    console.log("Hello")
   } catch {
     res.status(500).json( "Authors not found" );
   }
